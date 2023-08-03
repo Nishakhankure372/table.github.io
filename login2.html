@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* #w {
+            border: 2px solid black;
+            width: 400px;
+            height: 40px;
+            position: relative;
+            left: 550px; */
+        /* } */
+        body{
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1> Login </h1>
+    <label for=""> User_Name </label> <br>
+    <input type="email" id="user"> <br>
+    <label for=""> Password </label> <br>
+    <input type="password" id="psd"> <br> <br>
+    <input type="submit" value="Login" onclick="login()"> <br>
+    <h1 id="im"> welcome </h1>
+    <script>
+        function login(){
+            var a = document.getElementById("user").value;
+            var b = document.getElementById("psd").value;
+            if (a == "nisha@cosmos.com" || a == "nikhil@cosmos.com" || a == "khushali@cosmos.com" || a == "aakash@cosmos.com"){
+                
+                if (b == "nisha123" || b == "niku123" || b == "khushi123" || b == "aakash123"){
+
+                    document.getElementById("w").innerHTML="Welcome = User_name";
+                }
+            }
+            else {
+                document.getElementById("im").innerHTML="Crendintional does not match";
+            }
+        }
+        
+    </script>
+</body>
+</html>
